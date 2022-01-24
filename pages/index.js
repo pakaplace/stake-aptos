@@ -14,6 +14,7 @@ import { TwitterLogo } from "phosphor-react";
 import ProjectCard from "@/components/project-card";
 // import { getTable } from "@/lib/airtable";
 import Link from "@/components/link";
+import Hero from "@/components/new/hero";
 import SubscribeCard from "@/components/subscribe-card";
 
 const Home = ({ projects = [] }) => (
@@ -21,6 +22,7 @@ const Home = ({ projects = [] }) => (
     <PageTransition>
       <VStack spacing={12}>
         <Section>
+          <Hero/>
           <VStack spacing={4} align="start" fontSize="2xl">
             <Heading size="xl">Pocket Staking Pool 👋</Heading>
             <VStack>
