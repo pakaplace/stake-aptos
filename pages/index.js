@@ -12,17 +12,17 @@ import PageTransition from "../components/page-transitions";
 import Section from "@/components/section";
 import { TwitterLogo } from "phosphor-react";
 import ProjectCard from "@/components/project-card";
-import { getTable } from "@/lib/airtable";
+// import { getTable } from "@/lib/airtable";
 import Link from "@/components/link";
 import SubscribeCard from "@/components/subscribe-card";
 
-const Home = ({ projects }) => (
+const Home = ({ projects = [] }) => (
   <Box>
     <PageTransition>
       <VStack spacing={12}>
         <Section>
           <VStack spacing={4} align="start" fontSize="2xl">
-            <Heading size="xl">Hey, I'm Daniel 👋</Heading>
+            <Heading size="xl">Pocket Staking Pool 👋</Heading>
             <VStack>
               <Text>
                 I'm a designer, developer and entrepreneur of sorts. Born and
@@ -91,15 +91,15 @@ const Home = ({ projects }) => (
   </Box>
 );
 
-export async function getStaticProps() {
-  const projects = await getTable("Projects");
+// export async function getStaticProps() {
+//   const projects = await getTable("Projects");
 
-  return {
-    props: {
-      projects,
-    },
-    revalidate: 600,
-  };
-}
+//   return {
+//     props: {
+//       projects,
+//     },
+//     revalidate: 600,
+//   };
+// }
 
 export default Home;
