@@ -43,14 +43,12 @@ import {
                 Stake Pocket Now
               </Text>
               <br />
-              <Text as={'span'} color={'red.400'}>
-                use everywhere!
+              <Text as={'h1'} color={'red.400'}>
+                Compound your pocket 
               </Text>
             </Heading>
             <Text color={'gray.500'}>
-              Snippy is a rich coding snippets app that lets you create your own
-              code snippets, categorize them, and even sync them in the cloud so
-              you can use them anywhere. All that is free!
+              Stake POKT with us and increase your compounding speed. Enjoy distributed nodes. 
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}

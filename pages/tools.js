@@ -24,7 +24,6 @@ import BookCard from "@/components/book-card";
 import BookSuggestion from "@/components/book-suggestion";
 import {
   BookOpenIcon,
-  DesktopComputer,
   HeartIcon,
 } from "@heroicons/react/solid";
 import sorter from "sort-isostring";
@@ -106,7 +105,6 @@ const Tools = ({ tools }) => {
                 mt={2}
               >
                 <HStack spacing={1}>
-                  <Icon as={DesktopComputer} />
                   <Text>Web</Text>
                 </HStack>
               </Tab>
