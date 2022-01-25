@@ -44,11 +44,11 @@ import {
               </Text>
               <br />
               <Text as={'h2'} fontSize={{base: '2xl', sm: '3xl'}} color={'red.400'}>
-                Join our pool for as little as 1,000 $POKT and no out-of-pocket costs.
+                Join our node pool for as little as 1,000 $POKT and no out-of-pocket costs.
               </Text>
             </Heading>
             <Text color={useColorModeValue("neutral.1000", "neutralD.1000")}>
-              Stake your $POKT in our fractional staking pool and enjoy the network's highest rewards rates. Continuously compound your rewards or withdraw them daily to your wallet.
+              Stake your $POKT in our fractional staking pool and enjoy the network's highest APY rates. Continuously compound your rewards or withdraw them daily to your wallet.
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}
@@ -60,10 +60,13 @@ import {
                 px={6}
                 colorScheme={'red'}
                 bg={'red.400'}
-                _hover={{ bg: 'red.500' }}>
+                _hover={{ bg: 'red.500' }}
+                onClick={()=> window.open('https://docs.google.com/forms/d/e/1FAIpQLSdL7KcXlOP4OnEcAaLo-88mFuTyxrWLtjhyjmBe6yaE8SPZPg/viewform?usp=sf_link', '_blank')}
+                >
                 Get started
               </Button>
               <Button
+                disabled
                 rounded={'full'}
                 size={'lg'}
                 fontWeight={'normal'}

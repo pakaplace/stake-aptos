@@ -1,5 +1,5 @@
 const title = "Pocket Pool";
-const description = "";
+const description = "Fractional node staking on the Pocket Network. No minimums and 40% more relays than the network average.";
 
 const SEO = {
   title,

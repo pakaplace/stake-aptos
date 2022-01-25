@@ -58,7 +58,7 @@ import {
             </Text>
             <Heading>Our Infrastructure Advantage</Heading>
             <Text color={useColorModeValue("neutral.1000", "neutralD.1000")} fontSize={'lg'}>
-              Our premium nodes beat the network average by 31% 
+              Our premium validator node pool beats the network average by 31% 
             </Text>
             <Stack
               spacing={4}
@@ -72,19 +72,19 @@ import {
                   <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
                 }
                 iconBg={useColorModeValue('yellow.100', 'yellow.900')}
-                text={`Dedicated CPUs with excess capacity to handle high-traffic periods` }
+                text={`Dedicated, not shared, CPUs with excess capacity to maximize Pocket relays` }
               />
               <Feature
                 icon={<Icon as={IoLogoBitcoin} color={'green.500'} w={5} h={5} />}
                 iconBg={useColorModeValue('green.100', 'green.900')}
-                text={`Insurance provided on every node`}
+                text={`Full insurance provided for every validator node`}
               />
               <Feature
                 icon={
                   <Icon as={IoSearchSharp} color={'purple.500'} w={5} h={5} />
                 }
                 iconBg={useColorModeValue('purple.100', 'purple.900')}
-                text={'Automatic monitoring and network-outages fixed within minutes.'}
+                text={'Automatic monitoring and network-outages fixed within minutes'}
               />
             </Stack>
           </Stack>
