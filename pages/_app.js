@@ -9,10 +9,13 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import MobileNavigation from "@/components/mobile-navigation";
 import PlausibleProvider from "next-plausible";
+import { GAWrapper } from '../utility/analytics';
+
 
 const App = ({ Component, pageProps }) => {
   return (
     <>
+    <GAWrapper>
       <ChakraProvider theme={customTheme}>
         <PlausibleProvider domain="danielwirtz.com">
           <Head>
@@ -37,6 +40,7 @@ const App = ({ Component, pageProps }) => {
           <Footer />
         </PlausibleProvider>
       </ChakraProvider>
+      </GAWrapper>
       <FontFace />
     </>
   );
