@@ -47,7 +47,7 @@ const Footer = () => {
         display={{ base: "none", md: "flex" }}
         my={8}
       >
-        <FooterLink href="mailto:daniel@danielwirtz.com" name="Contact" />
+        <FooterLink href="mailto:hello@poktstakingpool.com" name="Contact Us" />
         {/* <Text
           fontSize="sm"
           color={useColorModeValue("neutral.800", "neutralD.800")}
@@ -55,7 +55,7 @@ const Footer = () => {
           © {date} Daniel Wirtz{" "}
         </Text> */}
         <HStack spacing={4}>
-          <Link href="https://twitter.com/wirtzdan/" isExternal unstyled>
+          <Link href="https://twitter.com/" isExternal unstyled>
             <IconButton
               size="sm"
               icon={<Icon as={TwitterLogo} weight="fill" />}
@@ -63,25 +63,7 @@ const Footer = () => {
             ></IconButton>
           </Link>
           <Link
-            href="https://www.linkedin.com/in/wirtzdan/"
-            isExternal
-            unstyled
-          >
-            <IconButton
-              size="sm"
-              icon={<LinkedinLogo weight="fill" />}
-              color={useColorModeValue("neutral.800", "neutralD.1000")}
-            ></IconButton>
-          </Link>
-          <Link href="https://github.com/wirtzdan" isExternal unstyled>
-            <IconButton
-              size="sm"
-              icon={<GithubLogo weight="fill" />}
-              color={useColorModeValue("neutral.800", "neutralD.1000")}
-            ></IconButton>
-          </Link>
-          <Link
-            href="https://www.youtube.com/channel/UCje_bQMr6F45x0Auii7IOvA"
+            href="https://www.youtube.com"
             unstyled
             isExternal
           >
@@ -92,7 +74,7 @@ const Footer = () => {
             ></IconButton>
           </Link>
         </HStack>
-        <FooterLink href="/privacy" name="Privacy" />
+        {/* <FooterLink href="/privacy" name="Privacy" /> */}
       </HStack>
     </Container>
   );

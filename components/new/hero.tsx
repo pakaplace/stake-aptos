@@ -20,7 +20,7 @@ import {
         <Stack
           align={'center'}
           spacing={{ base: 8, md: 10 }}
-          py={{ base: 16, md: 20 }}
+          py={{ base: 16 }}
           direction={{ base: 'column', md: 'row' }}>
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
             <Heading
@@ -40,15 +40,15 @@ import {
                   bg: 'red.400',
                   zIndex: -1,
                 }}>
-                Stake Pocket Now
+                Fractional Staking on Pocket Network
               </Text>
               <br />
-              <Text as={'h1'} color={'red.400'}>
-                Compound your pocket 
+              <Text as={'h2'} fontSize={{base: '2xl', sm: '3xl'}} color={'red.400'}>
+                Join our pool for as little as 1,000 $POKT and no out-of-pocket costs.
               </Text>
             </Heading>
-            <Text color={'gray.500'}>
-              Stake POKT with us and increase your compounding speed. Enjoy distributed nodes. 
+            <Text color={useColorModeValue("neutral.1000", "neutralD.1000")}>
+              Stake your $POKT in our fractional staking pool and enjoy the network's highest rewards rates. Continuously compound your rewards or withdraw them daily to your wallet.
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}

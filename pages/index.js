@@ -15,6 +15,9 @@ import ProjectCard from "@/components/project-card";
 // import { getTable } from "@/lib/airtable";
 import Link from "@/components/link";
 import Hero from "@/components/new/hero";
+import StatsGrid from "@/components/new/stats-grid";
+import FeaturesRow from "@/components/new/features-row";
+import FeaturesList from "@/components/new/features-list";
 import SubscribeCard from "@/components/subscribe-card";
 
 const Home = ({ projects = [] }) => (
@@ -23,6 +26,10 @@ const Home = ({ projects = [] }) => (
       <VStack spacing={12}>
         <Section>
           <Hero/>
+          <FeaturesRow/>
+          <FeaturesList/>
+          <StatsGrid/>
+          {/*
           <VStack spacing={4} align="start" fontSize="2xl">
             <Heading size="xl">Pocket Staking Pool 👋</Heading>
             <VStack>
@@ -51,7 +58,7 @@ const Home = ({ projects = [] }) => (
                 , where I learn, think and work in public.
               </Text>
             </VStack>
-            {/* <Link href="https://twitter.com/wirtzdan" unstyled>
+             <Link href="https://twitter.com/wirtzdan" unstyled>
               <Button
                 colorScheme="blue"
                 rounded="lg"
@@ -61,17 +68,17 @@ const Home = ({ projects = [] }) => (
               >
                 Follow me on Twitter
               </Button>
-            </Link> */}
-          </VStack>
+            </Link> 
+          </VStack>*/}
         </Section>
         <Section>
           <SubscribeCard
-            title="Subscribe to my newsletter"
-            description="Helpful tools, thoughtful articles and other findings from the web. From my desk to yours."
+            title="Subscribe to our newsletter"
+            description="Helpful tips to maximize your pocket rewards, from our desk to yours"
           />
         </Section>
 
-        <Section>
+        {/* <Section>
           <VStack align="start" spacing={8}>
             <Heading size="lg">Projects</Heading>
             <SimpleGrid columns={1} spacing={4} mt={8} w="100%">
@@ -87,7 +94,7 @@ const Home = ({ projects = [] }) => (
               ))}
             </SimpleGrid>
           </VStack>
-        </Section>
+        </Section> */}
       </VStack>
     </PageTransition>
   </Box>

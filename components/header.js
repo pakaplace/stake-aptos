@@ -93,7 +93,7 @@ const Header = () => {
         <VStack align="start" spacing={0}>
           <HStack justify="space-between" w="100%" h={16}>
             <AvatarNavigation />
-            <HStack ml={-4} spacing={2}>
+            {/* <HStack ml={-4} spacing={2}>
               <NavLink href="/about" name="About" />
               <NavLink href="/blog" name="Blog" />
               <NavLink href="/newsletter" name="Newsletter" />
@@ -169,7 +169,7 @@ const Header = () => {
                   </Link>
                 </MenuList>
               </Menu>
-            </HStack>
+            </HStack> */}
             <HStack>
               <ThemeToggle />
             </HStack>
