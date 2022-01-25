@@ -12,12 +12,12 @@ const SEO = {
     title,
     description,
     images: [
-      {
-        url: "https://poktstakingpool.com/static/images/banner.jpg",
-        alt: title,
-        width: 2240,
-        height: 1260,
-      },
+      // {
+      //   url: "https://poktstakingpool.com/static/images/banner.jpg",
+      //   alt: title,
+      //   width: 2240,
+      //   height: 1260,
+      // },
     ],
   },
   twitter: {
