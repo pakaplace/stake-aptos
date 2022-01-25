@@ -20,11 +20,11 @@ const SEO = {
       // },
     ],
   },
-  twitter: {
-    handle: "@wirtzdan",
-    site: "@wirtzdan",
-    cardType: "summary_large_image",
-  },
+  // twitter: {
+  //   handle: "@wirtzdan",
+  //   site: "@wirtzdan",
+  //   cardType: "summary_large_image",
+  // },
 };
 
 export default SEO;
