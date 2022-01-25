@@ -45,7 +45,6 @@ export default function StatsGrid() {
                   <Text
                     fontFamily={'heading'}
                     fontSize={'3xl'}
-                    color={'white'}
                     mb={3}>
                     {stat.title}
                   </Text>
@@ -63,7 +62,7 @@ export default function StatsGrid() {
 }
 
 const StatsText = ({ children }: { children: ReactNode }) => (
-  <Text as={'span'} fontWeight={700} color={'white'}>
+  <Text as={'span'} fontWeight={700}>
     {children}
   </Text>
 );

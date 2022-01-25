@@ -81,7 +81,9 @@ const Subscribe = ({ direction, ...props }) => {
               </FormControl>
               <Button
                 mt={4}
-                colorScheme="blue"
+                colorScheme={'red'}
+                bg={'red.400'}
+                _hover={{ bg: 'red.500' }}
                 type="submit"
                 w="100%"
                 minW={10}
