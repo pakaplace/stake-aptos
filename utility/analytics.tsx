@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import ReactGA from "react-ga4";
-import { Category, Action } from '../../types/frontend-types';
 
 const isTestingEnvironment = () => process.env.NODE_ENV === 'development';
 
