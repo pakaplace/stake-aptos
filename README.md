@@ -1,4 +1,4 @@
-# danielwirtz.com
+# poktstakingpool.com
 
 Welcome behind the curtain of my personal website/portfolio. Take a look around.
 
