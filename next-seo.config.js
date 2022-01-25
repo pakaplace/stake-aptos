@@ -1,4 +1,4 @@
-const title = "Pocket Pool";
+const title = "Pocket Network Staking Pool. Start with 1,000 Pocket";
 const description = "Fractional node staking on the Pocket Network. No minimums and 40% more relays than the network average.";
 
 const SEO = {
