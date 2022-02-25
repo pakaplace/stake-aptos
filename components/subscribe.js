@@ -7,6 +7,7 @@ import {
   Alert,
   AlertIcon,
   Collapse,
+  FormErrorMessage,
   FormHelperText,
   chakra,
   useColorModeValue,
@@ -66,7 +67,7 @@ const Subscribe = ({ direction, ...props }) => {
                   name="email_address"
                   placeholder="you@email.com"
                   type="email"
-                  ref={register({ required: true })}
+                  {...register('emailAddress', { required: true })}
                   isDisabled={isSuccessful}
                   isLoading={isSubmitSuccessful}
                   rounded="lg"
@@ -75,8 +76,8 @@ const Subscribe = ({ direction, ...props }) => {
                   bg={useColorModeValue("white", "neutralD.100")}
                 />
                 {/* <FormHelperText>Send max. once per month</FormHelperText> */}
-                {errors.author && (
-                  <FormErrorMessage>"E-Mail is required"</FormErrorMessage>
+                {errors.emailAddress && (
+                  <FormErrorMessage>E-Mail is required</FormErrorMessage>
                 )}
               </FormControl>
               <Button
