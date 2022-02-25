@@ -17,9 +17,9 @@ import {
 import { useForm } from "react-hook-form";
 import { useState, useRef } from "react";
 import { EyeIcon, EyeOffIcon } from "@heroicons/react/outline";
-import { signup, login, User } from "../../lib/users";
+import { signup, SignupUser } from "../../lib/users";
 
-function onSubmit(values: User) {
+function onSubmit(values: SignupUser) {
   signup(values)
     .then((res) => console.log("response", res))
     .catch((e) => {

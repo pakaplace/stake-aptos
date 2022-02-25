@@ -71,12 +71,12 @@ const Home = ({ projects = [] }) => (
             </Link> 
           </VStack>*/}
         </Section>
-        <Section>
+        {/* <Section>
           <SubscribeCard
             title="Subscribe to our newsletter"
             description="Helpful tips to maximize your pocket rewards, from our desk to yours"
           />
-        </Section>
+        </Section> */}
 
         {/* <Section>
           <VStack align="start" spacing={8}>
@@ -112,3 +112,4 @@ const Home = ({ projects = [] }) => (
 // }
 
 export default Home;
+
