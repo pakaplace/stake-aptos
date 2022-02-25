@@ -24,6 +24,7 @@ function onSubmit(values: User) {
     .then((res) => console.log("response", res))
     .catch((e) => {
       console.error("Error signing up- ", e);
+      window.alert("Signup unsuccesful")
     });
 }
 export default function SignupCard() {

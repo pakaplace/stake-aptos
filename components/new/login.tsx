@@ -24,6 +24,7 @@ import {
       .then((res) => console.log("response", res))
       .catch((e) => {
         console.error("Error signing up- ", e);
+        window.alert("Invalid username or password")
       });
   }
   export default function LoginCard() {
@@ -79,7 +80,6 @@ import {
                     type={showPassword ? "text" : "password"}
                     {...register("password", {
                       required: "This is required",
-  
                       pattern: {
                         value:
                           /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
