@@ -17,27 +17,34 @@ import {
 import { useForm } from "react-hook-form";
 import { useState, useRef } from "react";
 import { EyeIcon, EyeOffIcon } from "@heroicons/react/outline";
-import { signup, SignupUser } from "../../lib/users";
+// import { signup, SignupUser } from "../../lib/users";
+import { useAuth, SignupUser } from "../../contexts/useAuth";
 
-function onSubmit(values: SignupUser) {
-  signup(values)
-    .then((res) => console.log("response", res))
-    .catch((e) => {
-      console.error("Error signing up- ", e);
-      window.alert("Signup unsuccesful")
-    });
-}
 export default function SignupCard() {
   const [showPassword, setShowPassword] = useState(false);
+  const { signup } = useAuth();
   const {
     handleSubmit,
     register,
     watch,
     formState: { errors, isSubmitting },
   } = useForm();
+
   const password = useRef({});
   password.current = watch("password", "");
   console.log("current", errors, password.current);
+
+  function onSubmit(values: SignupUser) {
+    console.log("VALUES", values);
+    signup(values)
+      .then((res) => console.log("signup response", res))
+      .catch((e) => {
+        console.error("Error signing up- ", e);
+        window.alert(
+          "Signup unsuccesful. Your email may have already been used."
+        );
+      });
+  }
   return (
     <Stack spacing={8} mx={"auto"} maxW={"lg"} py={12} px={6}>
       <Stack align={"center"}>
@@ -59,15 +66,15 @@ export default function SignupCard() {
             <HStack align="start" py={2}>
               <Box>
                 <FormControl
-                  id="firstName"
-                  isInvalid={errors.firstName}
+                  id="first_name"
+                  isInvalid={errors.first_name}
                   isRequired
                 >
                   <FormLabel>First Name</FormLabel>
                   <Input
-                    id="firstName"
+                    id="first_name"
                     type="text"
-                    {...register("firstName", {
+                    {...register("first_name", {
                       required: "This is required",
                       minLength: {
                         value: 2,
@@ -76,20 +83,20 @@ export default function SignupCard() {
                     })}
                   />
                   <FormErrorMessage>
-                    {errors.firstName && errors.firstName.message}
+                    {errors.first_name && errors.first_name.message}
                   </FormErrorMessage>
                 </FormControl>
               </Box>
               <Box>
                 <FormControl
-                  id="lastName"
-                  isInvalid={errors.lastName}
+                  id="last_name"
+                  isInvalid={errors.last_name}
                   isRequired
                 >
                   <FormLabel>Last Name</FormLabel>
                   <Input
                     type="text"
-                    {...register("lastName", {
+                    {...register("last_name", {
                       required: "This is required",
                       minLength: {
                         value: 2,
@@ -98,7 +105,7 @@ export default function SignupCard() {
                     })}
                   />
                   <FormErrorMessage fontSize={"xs"}>
-                    {errors.lastName && errors.lastName.message}
+                    {errors.last_name && errors.last_name.message}
                   </FormErrorMessage>
                 </FormControl>
               </Box>
@@ -127,7 +134,6 @@ export default function SignupCard() {
                   type={showPassword ? "text" : "password"}
                   {...register("password", {
                     required: "This is required",
-
                     pattern: {
                       value:
                         /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
@@ -207,7 +213,10 @@ export default function SignupCard() {
             </Stack>
             <Stack pt={6}>
               <Text align={"center"}>
-                Already a user? <Link color={"blue.400"} href='/login'>Login</Link>
+                Already a user?{" "}
+                <Link color={"blue.400"} href="/login">
+                  Login
+                </Link>
               </Text>
             </Stack>
           </Stack>
