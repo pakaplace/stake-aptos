@@ -5,6 +5,8 @@ import Router, { useRouter } from "next/router";
 //api here is an axios instance which has our app's API set according to the env.
 import api from "../lib/Api";
 
+// Guide
+// https://www.mikealche.com/software-development/how-to-implement-authentication-in-next-js-without-third-party-libraries
 export interface UserProfile {
   email: string | null;
   totpEnabled: boolean | null;
