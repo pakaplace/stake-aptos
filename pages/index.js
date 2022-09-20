@@ -19,8 +19,9 @@ import StatsGrid from "@/components/new/stats-grid";
 import FeaturesRow from "@/components/new/features-row";
 import FeaturesList from "@/components/new/features-list";
 import SubscribeCard from "@/components/subscribe-card";
+import Faq from "@/components/new/faq";
 
-const Home = ({ projects = [] }) => (
+const Home = () => (
   <Box>
     <PageTransition>
       <VStack spacing={12}>
@@ -29,6 +30,7 @@ const Home = ({ projects = [] }) => (
           <FeaturesRow/>
           <FeaturesList/>
           <StatsGrid/>
+          <Faq/>
           {/*
           <VStack spacing={4} align="start" fontSize="2xl">
             <Heading size="xl">Pocket Staking Pool 👋</Heading>

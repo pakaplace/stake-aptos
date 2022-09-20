@@ -93,11 +93,15 @@ const Header = () => {
         <VStack align="start" spacing={0}>
           <HStack justify="space-between" w="100%" h={16}>
             <AvatarNavigation />
-            {/* <HStack ml={-4} spacing={2}>
-              <NavLink href="/about" name="About" />
-              <NavLink href="/blog" name="Blog" />
-              <NavLink href="/newsletter" name="Newsletter" />
-              <Menu isOpen={isOpen}>
+            <HStack ml={-4} spacing={2}>
+              <NavLink href="/aptos/dapp-rankings" name="Dapp Rankings" />
+              <NavLink
+                href="/aptos/staking-leaderboard"
+                name="Staking Leaderboard"
+              />
+              <NavLink href="/aptos/wallets" name="Wallets" />
+              {/* <NavLink href="/newsletter" name="Newsletter" /> */}
+              {/* <Menu isOpen={isOpen}>
                 <MenuButton
                   bg={useColorModeValue("neutral.100", "neutralD.300")}
                   _hover={{
@@ -168,11 +172,11 @@ const Header = () => {
                     </MenuItem>
                   </Link>
                 </MenuList>
-              </Menu>
-            </HStack> */}
-            <HStack>
-              <ThemeToggle />
+              </Menu> */}
             </HStack>
+            {/* <HStack>
+              <ThemeToggle />
+            </HStack> */}
           </HStack>
         </VStack>
       </Container>

@@ -1,10 +1,6 @@
-const withMDX = require("@next/mdx")({
-  extension: /\.mdx?$/,
-});
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+};
 
-module.exports = withMDX({
-  pageExtensions: ["js", "jsx", "mdx"],
-  images: {
-    domains: ["dl.airtable.com"],
-  },
-});
+module.exports = nextConfig;

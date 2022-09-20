@@ -10,14 +10,14 @@ import Footer from "../components/footer";
 import MobileNavigation from "@/components/mobile-navigation";
 import PlausibleProvider from "next-plausible";
 import { GAWrapper } from "../utility/analytics";
-import { AuthProvider } from "../contexts/useAuth.tsx";
+import "antd/dist/antd.css";
 
 const App = ({ Component, pageProps }) => {
   return (
     <>
       <GAWrapper>
         <ChakraProvider theme={customTheme}>
-          <PlausibleProvider domain="danielwirtz.com">
+          <PlausibleProvider domain="stakeaptos.com">
             <Head>
               <meta
                 content="width=device-width, initial-scale=1"
@@ -33,17 +33,11 @@ const App = ({ Component, pageProps }) => {
             </Head>
             <DefaultSeo {...SEO} />
             <Header />
-            <AuthProvider>
-              <Box
-                as="main"
-                pt={{ base: 16, md: 32 }}
-                pb={{ base: 24, md: 16 }}
-              >
-                <Component {...pageProps} />
-              </Box>
-              <MobileNavigation />
-              <Footer />
-            </AuthProvider>
+            <Box as="main" pt={{ base: 16, md: 32 }} pb={{ base: 24, md: 16 }}>
+              <Component {...pageProps} />
+            </Box>
+            <MobileNavigation />
+            <Footer />
           </PlausibleProvider>
         </ChakraProvider>
       </GAWrapper>

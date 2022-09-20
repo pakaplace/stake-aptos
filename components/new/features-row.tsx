@@ -36,21 +36,21 @@ export default function SimpleThreeColumns() {
           icon={<Icon as={FcOvertime} w={10} h={10} />}
           title={'Continuous Rewards Compounding'}
           text={
-            'Stake your $POKT rewards daily instead of monthly. We automatically roll your rewards into new nodes.'
+            'Stake your Aptos rewards daily instead of each period. We automatically roll your rewards into new validator nodes for ultimate capital efficiency.'
           }
         />
         <Feature
           icon={<Icon as={FcDonate} w={10} h={10} />}
           title={'Daily Reward Payments'}
           text={
-            'Receive rewards daily to your designated pocket wallet.'
+            'Receive rewards daily to your designated Aptos wallet.'
           }
         />
         <Feature
           icon={<Icon as={FcCheckmark} w={10} h={10} />}
-          title={'Low Minimums'}
+          title={'Instant Liquidity'}
           text={
-            'Start with as little as 1,000 $POKT and own a fractional share of our pool.'
+            'No lockup periods. Swap your liquid Aptos on a supported DEX.'
           }
         />
       </SimpleGrid>

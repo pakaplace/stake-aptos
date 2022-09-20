@@ -1,14 +1,14 @@
-const title = "Pocket Network Staking Pool. Start with 1,000 Pocket";
-const description = "Fractional node staking on the Pocket Network. No minimums and 40% more relays than the network average.";
+const title = "Aptos Network Staking Pool. Delegate or Stake";
+const description = "Fractional node staking on the Aptos Network. No minimums and beats 95% of network in uptime.";
 
 const SEO = {
   title,
   description,
-  canonical: "https://poktstakingpool.com",
+  canonical: "https://stakeaptos.com",
   openGraph: {
     type: "website",
     locale: "en_IE",
-    url: "https://poktstakingpool.com",
+    url: "https://stakeaptos.com",
     title,
     description,
     images: [

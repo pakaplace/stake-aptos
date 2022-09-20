@@ -37,18 +37,18 @@ import {
                   position: 'absolute',
                   bottom: 1,
                   left: 0,
-                  bg: 'red.400',
+                  bg: 'green.400',
                   zIndex: -1,
                 }}>
-                Fractional Staking on Pocket Network
+                Fractional Staking on Aptos Network
               </Text>
               <br />
-              <Text as={'h2'} fontSize={{base: '2xl', sm: '3xl'}} color={'red.400'}>
-                Join our node pool for as little as 1,000 $POKT and no out-of-pocket costs.
+              <Text as={'h2'} fontSize={{base: '2xl', sm: '3xl'}} color={'green.400'}>
+                Delegate to our Aptos nodes and benefit from instant liquidity.
               </Text>
             </Heading>
             <Text color={useColorModeValue("neutral.1000", "neutralD.1000")}>
-              Stake your $POKT in our fractional staking pool and enjoy the network's highest APY rates. Continuously compound your rewards or withdraw them daily to your wallet.
+              Stake your $APTOS in our liquid staking pool and enjoy the networks lowest fees. Continuously compound your rewards or withdraw them daily to your wallet. 
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}

@@ -32,10 +32,10 @@ export default function StatsGrid() {
               <Heading
                 mb={5}
                 fontSize={{ base: '3xl', md: '5xl' }}>
-                Win-Win Pricing
+                Low Commission, High Uptime
               </Heading>
               <Text fontSize={'xl'} color={useColorModeValue("neutral.1000", "neutralD.1000")}>
-                The more you earn, the more we earn. We take a 5% commission for managing your nodes. Revenue-share incentivizes us to maximize your rewards.
+                The more you earn, the more we earn. We take a 5% commission of your rewards for managing your nodes. Revenue-share incentivizes us to maximize your rewards. StakeAptos.com performs in the top 5% of all validators. 
               </Text>
             </Box>
 
@@ -69,26 +69,26 @@ const StatsText = ({ children }: { children: ReactNode }) => (
 
 const stats = [
   {
-    title: '5%',
+    title: 'Top 5',
     content: (
       <>
-        <StatsText>Rewards Commission</StatsText> plus a $10 per day fee per node to cover hardware upkeep
+        <StatsText>AIT-3 Validator Ranking</StatsText>
       </>
     ),
   },
   {
-    title: '100+',
+    title: '10+',
     content: (
       <>
-        <StatsText>Nodes</StatsText> managed, generating enough rewards for multiple nodes every day
+        <StatsText>Nodes</StatsText> managed
       </>
     ),
   },
   {
-    title: '30%',
+    title: '>99%%',
     content: (
       <>
-        <StatsText>Our Rewards Advantage</StatsText> over the network average
+        <StatsText>Performer</StatsText> benchmarked against all nodes
       </>
     ),
   },
