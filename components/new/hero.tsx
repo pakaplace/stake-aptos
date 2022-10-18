@@ -126,6 +126,7 @@ export default function CallToActionWithVideo() {
             boxShadow={"2xl"}
             width={"full"}
             overflow={"hidden"}
+            ml={4}
           >
             {/* <IconButton
               aria-label={"Play Button"}
