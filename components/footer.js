@@ -47,14 +47,14 @@ const Footer = () => {
         display={{ base: "none", md: "flex" }}
         my={8}
       >
-        <FooterLink href="mailto:hello@poktstakingpool.com" name="Contact Us" />
+        <FooterLink href="mailto:validators@stakeaptos.com" name="Contact Us" />
         {/* <Text
           fontSize="sm"
           color={useColorModeValue("neutral.800", "neutralD.800")}
         >
           © {date} Daniel Wirtz{" "}
         </Text> */}
-        <HStack spacing={4}>
+        {/* <HStack spacing={4}>
           <Link href="https://twitter.com/" isExternal unstyled>
             <IconButton
               size="sm"
@@ -73,7 +73,7 @@ const Footer = () => {
               color={useColorModeValue("neutral.800", "neutralD.1000")}
             ></IconButton>
           </Link>
-        </HStack>
+        </HStack> */}
         {/* <FooterLink href="/privacy" name="Privacy" /> */}
       </HStack>
     </Container>

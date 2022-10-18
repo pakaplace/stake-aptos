@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 import {
   Stack,
   Container,
@@ -7,48 +7,48 @@ import {
   Text,
   Heading,
   SimpleGrid,
-  useColorModeValue
-} from '@chakra-ui/react';
+  useColorModeValue,
+} from "@chakra-ui/react";
 
 export default function StatsGrid() {
   return (
-    <Box  position={'relative'}>
-      <Container maxW={'7xl'} zIndex={10} position={'relative'}>
-        <Stack direction={{ base: 'column', lg: 'row' }}>
-          <Stack
-            flex={1}
-            justify={{ lg: 'center' }}
-            py={{ base: 4, md: 20}}>
+    <Box position={"relative"}>
+      <Container maxW={"7xl"} zIndex={10} position={"relative"}>
+        <Stack direction={{ base: "column", lg: "row" }}>
+          <Stack flex={1} justify={{ lg: "center" }} py={{ base: 4, md: 20 }}>
             <Box mb={{ base: 8, md: 20 }}>
               <Text
-                fontFamily={'heading'}
+                fontFamily={"heading"}
                 fontWeight={700}
-                textTransform={'uppercase'}
+                textTransform={"uppercase"}
                 mb={3}
-                fontSize={'xl'}
-                color={'gray.500'}>
+                fontSize={"xl"}
+                color={"gray.500"}
+              >
                 Pricing
               </Text>
-              <Heading
-                mb={5}
-                fontSize={{ base: '3xl', md: '5xl' }}>
+              <Heading mb={5} fontSize={{ base: "3xl", md: "5xl" }}>
                 Low Commission, High Uptime
               </Heading>
-              <Text fontSize={'xl'} color={useColorModeValue("neutral.1000", "neutralD.1000")}>
-                The more you earn, the more we earn. We take a 5% commission of your rewards for managing your nodes. Revenue-share incentivizes us to maximize your rewards. StakeAptos.com performs in the top 5% of all validators. 
+              <Text
+                fontSize={"xl"}
+                color={useColorModeValue("neutral.1000", "neutralD.1000")}
+              >
+                The more you earn, the more we earn. We take a 12% commission of
+                your rewards for managing your stake.
               </Text>
             </Box>
 
             <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
               {stats.map((stat) => (
                 <Box key={stat.title}>
-                  <Text
-                    fontFamily={'heading'}
-                    fontSize={'3xl'}
-                    mb={3}>
+                  <Text fontFamily={"heading"} fontSize={"3xl"} mb={3}>
                     {stat.title}
                   </Text>
-                  <Text fontSize={'xl'} color={useColorModeValue("neutral.1000", "neutralD.1000")}>
+                  <Text
+                    fontSize={"xl"}
+                    color={useColorModeValue("neutral.1000", "neutralD.1000")}
+                  >
                     {stat.content}
                   </Text>
                 </Box>
@@ -62,35 +62,42 @@ export default function StatsGrid() {
 }
 
 const StatsText = ({ children }: { children: ReactNode }) => (
-  <Text as={'span'} fontWeight={700}>
+  <Text as={"span"} fontWeight={700}>
     {children}
   </Text>
 );
 
 const stats = [
   {
-    title: 'Top 5',
+    title: "100%",
     content: (
       <>
-        <StatsText>AIT-3 Validator Ranking</StatsText>
+        <StatsText>Uptime</StatsText> on Aptos Mainnet
       </>
     ),
   },
   {
-    title: '10+',
+    title: "Top 5 Validator",
     content: (
       <>
-        <StatsText>Nodes</StatsText> managed
+        <StatsText>During AIT-1, AIT-2, & AIT-3 Testnets</StatsText>
       </>
     ),
   },
+  // {
+  //   title: "10+",
+  //   content: (
+  //     <>
+  //       <StatsText>Nodes</StatsText> managed
+  //     </>
+  //   ),
+  // },
   {
-    title: '>99%%',
+    title: "12%",
     content: (
       <>
-        <StatsText>Performer</StatsText> benchmarked against all nodes
+        <StatsText>Commission.</StatsText> No additional costs.
       </>
     ),
   },
-
 ];

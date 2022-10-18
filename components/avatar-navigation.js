@@ -30,8 +30,8 @@ const AvatarNavigation = () => {
   return (
     <Link href="/">
       <Avatar
-        background={"green.400"}
-        name="SA"
+        background={"blue.400"}
+        name="S A"
         size="sm"
         // src="/psp-logo.jpg"
         cursor="pointer"

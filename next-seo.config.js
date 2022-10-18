@@ -1,5 +1,6 @@
 const title = "Aptos Network Staking Pool. Delegate or Stake";
-const description = "Fractional node staking on the Aptos Network. No minimums and beats 95% of network in uptime.";
+const description =
+  "Stake on the Aptos Network. No minimums and beats 95% of network in uptime.";
 
 const SEO = {
   title,
