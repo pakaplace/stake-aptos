@@ -36,7 +36,7 @@ const App = ({ Component, pageProps }) => {
             <Box as="main" pt={{ base: 16, md: 32 }} pb={{ base: 24, md: 16 }}>
               <Component {...pageProps} />
             </Box>
-            <MobileNavigation />
+            {/* <MobileNavigation /> */}
             <Footer />
           </PlausibleProvider>
         </ChakraProvider>

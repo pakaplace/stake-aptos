@@ -47,7 +47,10 @@ const Footer = () => {
         display={{ base: "none", md: "flex" }}
         my={8}
       >
-        <FooterLink href="mailto:validators@stakeaptos.com" name="Contact Us" />
+        <FooterLink
+          href="https://docs.google.com/forms/d/e/1FAIpQLSe3wBdIUIcb8QuM2qnMvuASFnUcBNjhnW82bkLBV7oGKRQD_w/viewform?usp=sf_link"
+          name="Contact Us"
+        />
         {/* <Text
           fontSize="sm"
           color={useColorModeValue("neutral.800", "neutralD.800")}

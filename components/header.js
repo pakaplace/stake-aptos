@@ -81,7 +81,7 @@ const Header = () => {
   return (
     <Box
       bg={useColorModeValue("white", "neutralD.100")}
-      display={{ base: "none", md: "block" }}
+      display={{ base: "block", md: "block" }}
       position="fixed"
       w="100%"
       zIndex={99}
@@ -95,15 +95,15 @@ const Header = () => {
             <AvatarNavigation />
             <HStack ml={-4} spacing={2}>
               <NavLink
-                href="https://dashboard.stakeaptos.com"
-                name="Validator Dashboard Rankings"
+                href="https://dashboard.stakeaptos.com/dashboard/0x9da88926fd4d773fd499fc41830a82fe9c9ff3508435e7a16b2d8f529e77cdda/0xccc221485ee530f3981f4beca12f010d2e7bb38d3fe30bfcf7798d99f4aabb33"
+                name="Validator Dashboard Tool"
               />
-              <NavLink href="/aptos/dapp-rankings" name="Dapp Rankings" />
-              <NavLink
+              {/* <NavLink href="/aptos/dapp-rankings" name="Dapp Rankings" /> */}
+              {/* <NavLink
                 href="/aptos/staking-leaderboard"
                 name="Staking Leaderboard"
-              />
-              <NavLink href="/aptos/wallets" name="Wallets" />
+              /> */}
+              {/* <NavLink href="/aptos/wallets" name="Wallets" /> */}
               {/* <NavLink href="/newsletter" name="Newsletter" /> */}
               {/* <Menu isOpen={isOpen}>
                 <MenuButton

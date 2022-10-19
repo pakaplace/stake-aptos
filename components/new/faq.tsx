@@ -174,7 +174,7 @@ const Faq = () => (
               </>
             )}
           </AccordionItem> */}
-          <AccordionItem>
+          {/* <AccordionItem>
             {({ isExpanded }) => (
               <>
                 {" "}
@@ -197,7 +197,7 @@ const Faq = () => (
                 </AccordionPanel>
               </>
             )}
-          </AccordionItem>
+          </AccordionItem> */}
         </Accordion>
       </Stack>
     </Container>

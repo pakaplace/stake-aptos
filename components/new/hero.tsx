@@ -52,12 +52,12 @@ export default function CallToActionWithVideo() {
               fontSize={{ base: "2xl", sm: "3xl" }}
               color={"blue.500"}
             >
-              Delegate to our Aptos nodes and benefit from instant liquidity.
+              Delegate to our Aptos Validator.
             </Text>
           </Heading>
           <Text color={useColorModeValue("neutral.1000", "neutralD.1000")}>
-            Stake your $APTOS to our validator and enjoy the networks lowest
-            fees. Maintain custody and voting power of your Aptos.
+            Stake your $APT with our validator and enjoy the networks lowest
+            fees. Maintain custody and voting power of your $APT stake.
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
@@ -75,7 +75,7 @@ export default function CallToActionWithVideo() {
                 window.open("https://dashboard.stakeaptos.com", "_blank")
               }
             >
-              View Our Validator Dashboard
+              View Our Validator Performance
             </Button>
             <Button
               rounded={"full"}
@@ -87,7 +87,10 @@ export default function CallToActionWithVideo() {
               _hover={{ bg: "gray.500" }}
               onClick={() =>
                 //@ts-ignore
-                (window!.location = "mailto:validators@stakeaptos.com")
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSe3wBdIUIcb8QuM2qnMvuASFnUcBNjhnW82bkLBV7oGKRQD_w/viewform?usp=sf_link",
+                  "_"
+                )
               }
             >
               Get In Touch
