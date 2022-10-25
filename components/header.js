@@ -95,7 +95,7 @@ const Header = () => {
             <AvatarNavigation />
             <HStack ml={-4} spacing={2}>
               <NavLink
-                href="https://dashboard.stakeaptos.com/dashboard"
+                href="https://dashboard.stakeaptos.com"
                 name="Validator Dashboard Tool"
               />
               {/* <NavLink href="/aptos/dapp-rankings" name="Dapp Rankings" /> */}
